@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="../assests/CICR logo.png" type="icon">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="./send_email.php" method="post">
+            <label for="name" class="w">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" class="w">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone" class="w">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="query" class="w">Your Query:</label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

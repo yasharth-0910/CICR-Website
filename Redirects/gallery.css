@@ -1,0 +1,11 @@
+.gal{
+    justify-content: center;
+    text-align: center;
+    font: 'Dosis';
+    padding: 5px;
+    background-image: url(../assests/gallery_bg.jpg);
+    height: 120px;
+    width: 100%;
+    margin: 0;
+   
+}

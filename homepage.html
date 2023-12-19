@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICR</title>
+    <link rel="icon" href="./assests/CICR logo.png" type="icon">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <div class="background-image-part">
+        <header class="header" id="header">
+            <a href="https://www.jiit.ac.in/"><img class="logo" src="./assests/JIIT Logo(White).png"></a>
+            <nav class="navbar">
+                <a href="#About-us">About Us</a>
+                <a href="./Redirects/projects.html" target="_blank">Projects</a>
+                <a href="./Redirects/gallery.html" target="_blank">Gallery</a>
+                <a href="./Redirects/alumni.html" target="_blank">Alumni</a>
+                <a href="./Redirects/contact.html" target="_blank">Contact</a>
+            </nav>
+        </header>
+        <script>
+              window.addEventListener("scroll", function () {
+                var header = document.getElementById("header");
+                var navbar = document.querySelector(".navbar");
+                var aboutUsSection = document.querySelector("#about"); 
+                var scrolled = window.scrollY > 0;
+      
+                header.classList.toggle("scrolled", scrolled);
+                navbar.classList.toggle("scrolled", scrolled);
+      
+                var aboutUsSectionTop = aboutUsSection.offsetTop;
+                var aboutUsSectionHeight = aboutUsSection.offsetHeight;
+                var isPastAboutUs =
+                  window.scrollY > aboutUsSectionTop + aboutUsSectionHeight;
+      
+                navbar.classList.toggle("past-about-us", isPastAboutUs);
+                
+                var isPastAboutUsText =
+                  window.scrollY > aboutUsSectionTop;
+      
+                navbar.classList.toggle("past-about-us-text", isPastAboutUsText);
+              });
+        </script>
+        <section class="home">
+            <div class="logo-container">
+                <img class="logo-cicr" src="./assests/CICR_logo-removebg-preview (1).png">
+                <div class="logo-text">
+                    <h1>CICR</h1>
+                    <br>
+                    <p>Promoting Technology, Creativity and Innovation</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--
+        About us will contain motto of CICR
+    -->
+    <div class="About-us" id="About-us">
+        <h1 class="us">About Us</h1>
+        <p class="motto">Welcome to the Creative & Innovative Cell in Robotics (CICR) Club at JIIT-128, where we are on a mission to revolutionize the field of robotics and address real-world challenges. Our club serves as a collaborative hub, bringing together students with a shared passion for mechanical, electronic, and software design.
+
+            At CICR, we take pride in our diverse range of projects, spanning from autonomous bots and robotic arms to aerial vehicles. Our focus extends beyond mere technical prowess—we aim to create solutions that make a positive impact on society.
+            
+            Whether you're a seasoned roboticist or a newcomer, CICR welcomes all students. Our club emphasizes not only technical growth but also the development of essential interpersonal skills such as teamwork, cooperation, perseverance, and sincerity. No prior experience in robotics is necessary; all you need is enthusiasm, and the club will guide you through the rest.
+            
+            CICR fosters an environment that encourages the sharing of wisdom and experiences among its members. If you've ever harbored a dream of designing circuits or controlling your own bot, CICR is the place to turn that dream into reality.
+            
+            Join us on this transformative journey where exploration, creativity, and problem-solving converge. Together, let's build something extraordinary that goes beyond the boundaries of imagination. Welcome to CICR—where passion meets purpose, and innovation knows no limits!</p>
+            <hr class="hm" width="10%">
+    </div>
+    
+    <!--
+        Core Members will be shown in Attractive way uisng(Currently thinking of possible ways)
+    -->
+    <div class="team">
+        <h1 class="meet">The Team</h1>
+        <hr class="ic">
+        <h3 class="core">Meet our Core Team</h3>
+    </div>
+</body>
+</html>
+
+
+
