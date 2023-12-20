@@ -1,8 +1,8 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    overflow: auto;
 }
+
 
 .contactform {
     padding: 50px;
@@ -11,11 +11,12 @@ body {
 }
 
 h1 {
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 32px;
     margin-bottom: 30px;
-    font: 'Dosis';
+    font-family: 'Dosis', sans-serif; 
 }
+
 
 form {
     max-width: 500px;
@@ -68,8 +69,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 100vh;
+    margin: 0;
 }
+
 
 .contactform form {
     max-width: 400px;
