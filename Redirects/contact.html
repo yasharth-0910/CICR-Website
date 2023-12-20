@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    <div class="contact-form">
+    <div class="contactform">
         <h1>Contact Us</h1>
-        <form action="./send_email.php" method="post">
+        <form>
             <label for="name" class="w">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -24,8 +24,33 @@
             <label for="query" class="w">Your Query:</label>
             <textarea id="query" name="query" rows="4" required></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="button" onclick="sendEmail()">Submit</button>
         </form>
+
+        <div id="responseMessage"></div>
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init("test.mail.project.code@gmail.com");
+
+            function sendEmail() {
+                var templateParams = {
+                    to_name: document.getElementById("name").value,
+                    from_name: document.getElementById("email").value,
+                    phone: document.getElementById("phone").value,
+                    message: document.getElementById("query").value,
+                };
+
+                emailjs.send("service_1o045yj", "template_07m9z5z", templateParams)
+                    .then(function(response) {
+                        console.log("Email sent successfully:", response);
+                        document.getElementById("responseMessage").innerHTML = "Thank you! Your form has been submitted.";
+                    }, function(error) {
+                        console.log("Email sending failed:", error);
+                        document.getElementById("responseMessage").innerHTML = "Error: Unable to submit the form. Please try again later.";
+                    });
+            }
+        </script>
     </div>
 </body>
 </html>

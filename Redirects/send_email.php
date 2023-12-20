@@ -17,8 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare email content
-    $to = "teslamotors.gc.grn@gmail.com"; // Your email
-    $subject = "New Form Submission from CICR Website";
+    $to = "_____"; // Your email
+    $subject = " FNeworm Submission from CICR Website";
 
     $message = "Name: $name\n";
     $message .= "Email: $email\n";

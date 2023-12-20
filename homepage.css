@@ -162,6 +162,7 @@ body {
     margin: 10px;
     font: 'Dosis';
 }
+
 .core{
     padding-top: 20px;
 }
@@ -171,3 +172,16 @@ body {
     height: 2px;
 }
 
+.logo-cicr{
+    height: 200px;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; 
+}

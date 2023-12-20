@@ -12,9 +12,9 @@
 <body>
     <div class="background-image-part">
         <header class="header" id="header">
-            <a href="https://www.jiit.ac.in/"><img class="logo" src="./assests/JIIT Logo(White).png"></a>
+            <a href="https://www.jiit.ac.in/" target="_blank"><img class="logo" src="./assests/JIIT Logo(White).png"></a>
             <nav class="navbar">
-                <a href="#About-us">About Us</a>
+                <a href="javascript:void(0);" onclick="scrollToSection('About-us')">About Us</a>
                 <a href="./Redirects/projects.html" target="_blank">Projects</a>
                 <a href="./Redirects/gallery.html" target="_blank">Gallery</a>
                 <a href="./Redirects/alumni.html" target="_blank">Alumni</a>
@@ -22,7 +22,19 @@
             </nav>
         </header>
         <script>
-              window.addEventListener("scroll", function () {
+            function scrollToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    var offsetTop = section.offsetTop;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+
+
+            window.addEventListener("scroll", function () {
                 var header = document.getElementById("header");
                 var navbar = document.querySelector(".navbar");
                 var aboutUsSection = document.querySelector("#about"); 
@@ -42,7 +54,7 @@
                   window.scrollY > aboutUsSectionTop;
       
                 navbar.classList.toggle("past-about-us-text", isPastAboutUsText);
-              });
+            });
         </script>
         <section class="home">
             <div class="logo-container">
@@ -60,16 +72,8 @@
     -->
     <div class="About-us" id="About-us">
         <h1 class="us">About Us</h1>
-        <p class="motto">Welcome to the Creative & Innovative Cell in Robotics (CICR) Club at JIIT-128, where we are on a mission to revolutionize the field of robotics and address real-world challenges. Our club serves as a collaborative hub, bringing together students with a shared passion for mechanical, electronic, and software design.
-
-            At CICR, we take pride in our diverse range of projects, spanning from autonomous bots and robotic arms to aerial vehicles. Our focus extends beyond mere technical prowess—we aim to create solutions that make a positive impact on society.
-            
-            Whether you're a seasoned roboticist or a newcomer, CICR welcomes all students. Our club emphasizes not only technical growth but also the development of essential interpersonal skills such as teamwork, cooperation, perseverance, and sincerity. No prior experience in robotics is necessary; all you need is enthusiasm, and the club will guide you through the rest.
-            
-            CICR fosters an environment that encourages the sharing of wisdom and experiences among its members. If you've ever harbored a dream of designing circuits or controlling your own bot, CICR is the place to turn that dream into reality.
-            
-            Join us on this transformative journey where exploration, creativity, and problem-solving converge. Together, let's build something extraordinary that goes beyond the boundaries of imagination. Welcome to CICR—where passion meets purpose, and innovation knows no limits!</p>
-            <hr class="hm" width="10%">
+        <p class="motto">Welcome to the Creative & Innovative Cell in Robotics (CICR) Club at JIIT-128! We're on a mission to revolutionize robotics and tackle real-world challenges. As a collaborative hub, we bring together students passionate about mechanical, electronic, and software design. From autonomous bots to aerial vehicles, our projects aim to create solutions with a positive impact. Whether you're a seasoned roboticist or a newcomer, CICR welcomes all students, emphasizing technical growth and essential interpersonal skills. No prior robotics experience is needed—just bring your enthusiasm, and the club will guide you. CICR fosters an environment that encourages sharing wisdom and experiences. If you dream of designing circuits or controlling your bot, CICR is where dreams become reality. Join us on a transformative journey of exploration, creativity, and problem-solving. Welcome to CICR—where passion meets purpose, and innovation knows no limits!</p>
+        <hr class="hm" width="10%">
     </div>
     
     <!--
@@ -80,8 +84,10 @@
         <hr class="ic">
         <h3 class="core">Meet our Core Team</h3>
     </div>
+    <footer class="footer">
+        <p>MADE WITH ❤️ BY YASHARTH SINGH</p>
+        <a href="https://github.com/yasharth-0910" target="_blank"><img src="../assests/github_icon.png" style="height: 25px; width: 25px;"></a>
+        <a href="https://www.linkedin.com/in/yasharth-singh-b2493b284/" target="_blank"><img src="../assests/linkedin_logo.png" style="height: 25px; width: 25px;"></a>
+    </footer>
 </body>
 </html>
-
-
-
