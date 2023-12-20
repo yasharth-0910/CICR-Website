@@ -79,8 +79,13 @@ body {
     background-color: rgba(33, 143, 160, 0.437);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
 }
 
 .w{
     color: whitesmoke;
+}
+
+.contact-form form:hover {
+    box-shadow: 0 0 15px rgba(16, 72, 212, 0.8); /* Change shadow on hover */
 }
