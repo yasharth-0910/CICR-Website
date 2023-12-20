@@ -1,7 +1,7 @@
 .gal{
     justify-content: center;
     text-align: center;
-    font: 'Dosis';
+    font-family: 'Times New Roman', Times, serif;
     padding: 5px;
     background-image: url(../assests/gallery_bg.jpg);
     height: 120px;
@@ -58,4 +58,8 @@
 
 .slider-nav a:hover{
     opacity: 1;
+}
+
+.moments{
+    font-family: 'Times New Roman', Times, serif;
 }
