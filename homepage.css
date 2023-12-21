@@ -254,7 +254,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    padding: 20px;
+    padding: 15px;
     z-index: 3;
     border-radius: 10px 0  0 10px;
 }
@@ -266,15 +266,12 @@ body {
 
 .social-icon img {
     width: 20px; 
-
 }
 
 .social-icon {
 
     text-decoration: none;
     transition: transform 0.2s ease-in-out; 
-
-
     transform: translateY(0);
 }
 
@@ -438,5 +435,6 @@ body {
 
 }
 
-
-/* ... (remaining styles) */
+.social-bar{
+    padding-bottom: 0;
+}

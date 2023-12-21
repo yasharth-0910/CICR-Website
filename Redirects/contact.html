@@ -3,55 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="icon" href="../assests/CICR logo.png" type="icon">
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./contact.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .fa-envelope, .fa-user {
+            margin-right: 10px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <div class="contactform">
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name" class="w">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email" class="w">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <form action="https://formspree.io/f/myyrgnpa" method="post">
+        <h2>Contact Us</h2>
 
-            <label for="phone" class="w">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+        <label for="email"><i class="fas fa-envelope"></i>Email:</label>
+        <input type="email" name="_replyto" required>
 
-            <label for="query" class="w">Your Query:</label>
-            <textarea id="query" name="query" rows="4" required></textarea>
+        <label for="name"><i class="fas fa-user"></i>Name:</label>
+        <input type="text" name="name" required>
 
-            <button type="button" onclick="sendEmail()">Submit</button>
-        </form>
+        <label for="query">Query:</label>
+        <textarea name="query" rows="4" required></textarea>
 
-        <div id="responseMessage"></div>
+        <button type="submit">Submit</button>
+    </form>
 
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script>
-            emailjs.init("test.mail.project.code@gmail.com");
-
-            function sendEmail() {
-                var templateParams = {
-                    to_name: document.getElementById("name").value,
-                    from_name: document.getElementById("email").value,
-                    phone: document.getElementById("phone").value,
-                    message: document.getElementById("query").value,
-                };
-
-                emailjs.send("service_1o045yj", "template_07m9z5z", templateParams)
-                    .then(function(response) {
-                        console.log("Email sent successfully:", response);
-                        document.getElementById("responseMessage").innerHTML = "Thank you! Your form has been submitted.";
-                    }, function(error) {
-                        console.log("Email sending failed:", error);
-                        document.getElementById("responseMessage").innerHTML = "Error: Unable to submit the form. Please try again later.";
-                    });
-            }
-        </script>     
-    </div>
 
 </body>
 </html>
