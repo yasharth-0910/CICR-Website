@@ -1,3 +1,11 @@
+.entire{
+    background-image: url(../assests/geo.jpg);
+    background-size: cover;
+    background-position:  center ;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -11,6 +19,7 @@ body {
     height: 120px;
     width: 100%;
     margin: 0;
+    color: whitesmoke;
 }
 
 .container {

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .background-image-part {
-    background-image: url('./assests/background.jpg');
+    background-image: url('./assests/robot.jpg');
     background-size: cover;
     background-position: center center ;
     background-repeat: no-repeat;
@@ -20,7 +20,6 @@ body {
     margin: 0;
     overflow: auto; 
 }
-
 
 
 .header {
@@ -91,12 +90,22 @@ body {
     height: 100px; 
 }
 
+/* ... (previous styles) */
+
 .logo-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align items to the left */
     margin-top: 80px;
 }
+
+.home {
+    padding: 80px 10%;
+    color: white;
+    text-align: left; /* Align text to the left */
+}
+
+/* ... (remaining styles) */
 
 .header.scrolled {
     background-color: black;
@@ -195,6 +204,7 @@ body {
     padding: 0 20px 10px 20px;
 }
 
+
 .social-links {
     display: flex;
 }
@@ -217,8 +227,9 @@ body {
 .social-link {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-right: 20px;
     font-weight: bold;
+    display: flex;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -272,3 +283,160 @@ body {
     transform: translateY(-5px); 
 }
 
+.core-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.team-card {
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h4 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #00abf0;
+    transition: color 0.2s ease-in-out;
+    
+}
+
+.social-links a:hover {
+    color: #007bb5;
+}
+
+
+
+.member-info h2 {
+    margin: 5px 0;
+}
+
+.member-info p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 25px; /* Adjust the size as needed */
+    height: 25px; /* Adjust the size as needed */
+}
+.team-card {
+    /* ... (existing styles) */
+    position: relative;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #00abf0;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bb5;
+}
+
+.team-card {
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h4 {
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    margin-bottom: 10px; /* Add margin to create space */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the social links */
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block; /* Display the links in a row */
+    margin: 0 5px;
+    text-decoration: none;
+    color: #00abf0;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bb5;
+}
+
+.link{
+    display: flex;
+
+}
+
+
+/* ... (remaining styles) */
