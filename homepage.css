@@ -121,11 +121,13 @@ body {
     background-color: transparent;
 }
 
-.motto{
+.motto {
     font-family: 'dosis';
-    padding: 5px;
-    font-size: 25px;
+    padding: 0px 80px 0 80px;
+    font-size: 20px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height to control the spacing between lines */
 }
+
 
 .About-us {
     padding: 20px;
@@ -177,11 +179,96 @@ body {
 }
 
 .footer {
-    background-color: #f0f0f0;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
     z-index: 2; 
+    background-color: black;
+    color: white;
 }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px 20px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+.made-by {
+    color: white;
+}
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    text-decoration: none;
+    color: #00abf0; 
+    transform: translateY(-3px); 
+}
+
+.made-by {
+    color: white;
+}
+
+
+.social-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-30%);
+    right: 0;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    z-index: 3;
+    border-radius: 10px 0  0 10px;
+}
+
+.social-icon {
+    margin-bottom: 15px; 
+    text-decoration: none;
+}
+
+.social-icon img {
+    width: 20px; 
+
+}
+
+.social-icon {
+
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out; 
+
+
+    transform: translateY(0);
+}
+
+.social-icon:hover {
+    
+    transform: translateY(-5px); 
+}
+
