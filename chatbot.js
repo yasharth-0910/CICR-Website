@@ -6,6 +6,7 @@ class Chatbot {
         this.isResizing = false;
         this.dragOffset = { x: 0, y: 0 };
         this.resizeStart = { x: 0, y: 0, width: 0, height: 0, windowX: 0, windowY: 0 };
+        this.scrollPosition = 0; // For mobile scroll handling
         this.apiUrl = 'https://cicrchatbot.onrender.com/chat'; // Replace with your FastAPI backend URL
         
         this.initElements();
@@ -42,12 +43,30 @@ class Chatbot {
         // Global mouse events
         document.addEventListener('mousemove', (e) => this.handleMouseMove(e));
         document.addEventListener('mouseup', () => this.handleMouseUp());
+        
+        // Handle window resize for mobile/desktop transitions
+        window.addEventListener('resize', () => this.handleWindowResize());
     }
 
     toggleChat() {
         this.isOpen = !this.isOpen;
         this.toggleButton.classList.toggle('active', this.isOpen);
         this.chatWindow.classList.toggle('active', this.isOpen);
+        
+        // Handle mobile body scroll prevention
+        if (window.innerWidth <= 768) {
+            if (this.isOpen) {
+                document.body.classList.add('chatbot-open');
+                // Store current scroll position
+                this.scrollPosition = window.pageYOffset;
+                document.body.style.top = `-${this.scrollPosition}px`;
+            } else {
+                document.body.classList.remove('chatbot-open');
+                document.body.style.top = '';
+                // Restore scroll position
+                window.scrollTo(0, this.scrollPosition || 0);
+            }
+        }
         
         if (this.isOpen) {
             this.messageInput.focus();
@@ -139,6 +158,14 @@ class Chatbot {
         if (this.isResizing) {
             this.isResizing = false;
             this.chatWindow.classList.remove('resizing');
+        }
+    }
+
+    handleWindowResize() {
+        // Clean up mobile states when switching to desktop
+        if (window.innerWidth > 768) {
+            document.body.classList.remove('chatbot-open');
+            document.body.style.top = '';
         }
     }
 
