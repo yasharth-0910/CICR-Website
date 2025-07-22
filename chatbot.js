@@ -53,21 +53,6 @@ class Chatbot {
         this.toggleButton.classList.toggle('active', this.isOpen);
         this.chatWindow.classList.toggle('active', this.isOpen);
         
-        // Handle mobile body scroll prevention
-        if (window.innerWidth <= 768) {
-            if (this.isOpen) {
-                document.body.classList.add('chatbot-open');
-                // Store current scroll position
-                this.scrollPosition = window.pageYOffset;
-                document.body.style.top = `-${this.scrollPosition}px`;
-            } else {
-                document.body.classList.remove('chatbot-open');
-                document.body.style.top = '';
-                // Restore scroll position
-                window.scrollTo(0, this.scrollPosition || 0);
-            }
-        }
-        
         if (this.isOpen) {
             this.messageInput.focus();
         }
@@ -162,11 +147,7 @@ class Chatbot {
     }
 
     handleWindowResize() {
-        // Clean up mobile states when switching to desktop
-        if (window.innerWidth > 768) {
-            document.body.classList.remove('chatbot-open');
-            document.body.style.top = '';
-        }
+        // Handle window resize events
     }
 
     handleInputChange() {
