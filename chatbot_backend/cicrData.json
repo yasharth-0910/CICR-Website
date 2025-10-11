@@ -827,7 +827,295 @@
       "role": "model",
       "parts": [
         {
-          "text": "Reach out to CICR\u2019s management team at [email] or DM us on Instagram (@cicr_jiit). Include your event proposal!"
+          "text": "Reach out to CICR's management team at [email] or DM us on Instagram (@cicr_jiit). Include your event proposal!"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the Society Head of CICR?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Archit Jain** is the Society Head of CICR! 🏛️"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the head of CICR?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Archit Jain** is the Society Head of CICR! 🏛️"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who are the Tech Heads?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "The Tech Heads of CICR are **Aman Raj**, **Hardik Gupta**, and **Vansh**! 💻"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the Tech Head of CICR?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "The Tech Heads of CICR are **Aman Raj**, **Hardik Gupta**, and **Vansh**! 💻"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who are the Management Heads?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "The Management Heads of CICR are **Aryan Gupta**, **Nandini Mittal**, and **Vaibhav Katariya**! 📊"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the Management Head of CICR?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "The Management Heads of CICR are **Aryan Gupta**, **Nandini Mittal**, and **Vaibhav Katariya**! 📊"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the PR Head?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Taarini Mishra** is the PR Head of CICR! 📢"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is the Coordinator?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Yasharth Singh** is the Coordinator of CICR! 🎯"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Aman Raj?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Aman Raj** is one of the Tech Heads at CICR! 💻"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Archit Jain?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Archit Jain** is the Society Head of CICR! 🏛️"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Aryan Gupta?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Aryan Gupta** is one of the Management Heads at CICR! 📊"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Hardik Gupta?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Hardik Gupta** is one of the Tech Heads at CICR! 💻"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Nandini Mittal?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Nandini Mittal** is one of the Management Heads at CICR! 📊"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Taarini Mishra?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Taarini Mishra** is the PR Head of CICR! 📢"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Vaibhav Katariya?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Vaibhav Katariya** is one of the Management Heads at CICR! 📊"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Vansh?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Vansh** is one of the Tech Heads at CICR! 💻"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Who is Yasharth Singh?"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "**Yasharth Singh** is the Coordinator of CICR! 🎯"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Tell me about CICR team members"
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "Here are the CICR team members:\n\n**Society Head:** Archit Jain 🏛️\n\n**Tech Heads:** Aman Raj, Hardik Gupta, Vansh 💻\n\n**Management Heads:** Aryan Gupta, Nandini Mittal, Vaibhav Katariya 📊\n\n**PR Head:** Taarini Mishra 📢\n\n**Coordinator:** Yasharth Singh 🎯"
         }
       ]
     }
